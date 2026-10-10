@@ -275,6 +275,8 @@
         .card-accent.blue { background: linear-gradient(180deg, var(--accent-blue), #2563eb); }
         .card-accent.purple { background: linear-gradient(180deg, var(--accent-purple), #7c3aed); }
         .card-accent.emerald { background: linear-gradient(180deg, var(--accent-emerald), #059669); }
+        .card-accent.rose { background: linear-gradient(180deg, var(--accent-rose), #e11d48); }
+        .card-accent.amber { background: linear-gradient(180deg, var(--accent-amber), #d97706); }
 
         /* Card content */
         .card-body {
@@ -328,6 +330,24 @@
             box-shadow: 0 0 25px rgba(52, 211, 153, 0.2);
         }
 
+        .card-icon-wrap.rose {
+            background: rgba(244, 63, 94, 0.1);
+            border: 1px solid rgba(244, 63, 94, 0.2);
+            box-shadow: 0 0 20px rgba(244, 63, 94, 0);
+        }
+        .card:hover .card-icon-wrap.rose {
+            box-shadow: 0 0 25px rgba(244, 63, 94, 0.2);
+        }
+
+        .card-icon-wrap.amber {
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0);
+        }
+        .card:hover .card-icon-wrap.amber {
+            box-shadow: 0 0 25px rgba(245, 158, 11, 0.2);
+        }
+
         .card-info {
             flex: 1;
             min-width: 0;
@@ -344,6 +364,8 @@
         .card-number.blue { color: var(--accent-blue); }
         .card-number.purple { color: var(--accent-purple); }
         .card-number.emerald { color: var(--accent-emerald); }
+        .card-number.rose { color: var(--accent-rose); }
+        .card-number.amber { color: var(--accent-amber); }
 
         .card-title {
             font-size: 1.35rem;
@@ -407,6 +429,8 @@
         .card:nth-child(1) { animation-delay: 0.1s; }
         .card:nth-child(2) { animation-delay: 0.2s; }
         .card:nth-child(3) { animation-delay: 0.3s; }
+        .card:nth-child(4) { animation-delay: 0.4s; }
+        .card:nth-child(5) { animation-delay: 0.5s; }
 
         @keyframes card-appear {
             to {
@@ -470,7 +494,7 @@
         <!-- Stats -->
         <div class="stats-bar">
             <div class="stat-item">
-                <div class="stat-number">3</div>
+                <div class="stat-number">5</div>
                 <div class="stat-label">Lectures</div>
             </div>
             <div class="stat-item">
@@ -545,6 +569,52 @@
                             <span class="tag">Self-Balancing BST</span>
                             <span class="tag">Rotations</span>
                             <span class="tag">O(log n)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Card 4: B-Tree Masterclass -->
+            <a href="b-tree-masterclass.html" class="card" id="card-btree">
+                <div class="card-accent rose"></div>
+                <div class="card-body">
+                    <div class="card-icon-wrap rose">🌳</div>
+                    <div class="card-info">
+                        <div class="card-number rose">Lecture 04</div>
+                        <div class="card-title">B-Tree Masterclass</div>
+                        <div class="card-desc">Deep dive into B-Trees — multi-way search trees optimized for disk access, insertion, deletion, and splitting strategies.</div>
+                        <div class="card-tags">
+                            <span class="tag">B-Trees</span>
+                            <span class="tag">Disk-Optimized</span>
+                            <span class="tag">Multi-way Search</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Card 5: The B-Tree Masterclass -->
+            <a href="the-b-tree-masterclass.html" class="card" id="card-btree-the">
+                <div class="card-accent amber"></div>
+                <div class="card-body">
+                    <div class="card-icon-wrap amber">📊</div>
+                    <div class="card-info">
+                        <div class="card-number amber">Lecture 05</div>
+                        <div class="card-title">The B-Tree Masterclass</div>
+                        <div class="card-desc">An extended exploration of B-Tree variants, performance analysis, real-world database indexing, and advanced balancing techniques.</div>
+                        <div class="card-tags">
+                            <span class="tag">B-Tree Variants</span>
+                            <span class="tag">Database Indexing</span>
+                            <span class="tag">Performance</span>
                         </div>
                     </div>
                 </div>
